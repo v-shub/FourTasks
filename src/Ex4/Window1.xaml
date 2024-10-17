@@ -1,0 +1,21 @@
+﻿<Window x:Class="Ex4.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex4"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="ToMainButton" Content="Назад" HorizontalAlignment="Left" Height="28" Margin="24,378,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="226,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"><Run Language="ru-ru" Text="Введите два числа"/></TextBlock>
+        <TextBox x:Name="Num1Box" HorizontalAlignment="Left" Height="21" Margin="350,79,0,0" TextWrapping="Wrap" Text="Число 1" VerticalAlignment="Top" Width="80" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="Num2Box" HorizontalAlignment="Left" Height="21" Margin="460,79,0,0" TextWrapping="Wrap" Text="Число 2" VerticalAlignment="Top" Width="80" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="226,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"><Run Language="ru-ru" Text="Сумма чисел между:"/></TextBlock>
+        <Label x:Name="SumLabel" Content="Сумма" HorizontalAlignment="Left" Height="28" Margin="364,225,0,0" VerticalAlignment="Top" Width="353"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="226,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"><Run Language="ru-ru" Text="Нечетные числа"/><Run Text=" между:"/></TextBlock>
+        <Label x:Name="OddLabel" Content="Числа" HorizontalAlignment="Left" Height="28" Margin="364,279,0,0" VerticalAlignment="Top" Width="353"/>
+        <Button x:Name="CalcButton" Content="Считать" HorizontalAlignment="Center" Height="31" Margin="0,152,0,0" VerticalAlignment="Top" Width="110" Click="CalcButton_Click"/>
+
+    </Grid>
+</Window>
